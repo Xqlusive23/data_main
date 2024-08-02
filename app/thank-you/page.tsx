@@ -24,7 +24,7 @@ const ThankYou = () => {
           
           <div className='flex justify-between items-center text-white py-2 px-[20%] bg-black'>
         {/* <div className="flex flex-col font-bold text-[25px]"> */}
-        <img src="assets/data.jpg"/>
+        <a href='https://dataannotation-dg92.onrender.com'><img src="assets/data.jpg" alt="Data" /></a>
           {/* </div> */}
           <div className='space-x-4 space-y-10 text-xs'>
             <Link href="/" legacyBehavior><a className="hover:text-gray-500"> <LockClosedIcon className=" m-h-5 w-5 mr-2" /> {/* Heroicon Icon */}
