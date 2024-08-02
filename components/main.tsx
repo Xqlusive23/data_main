@@ -270,7 +270,7 @@ export default function Main() {
                      htmlFor="socialSecurity"
                      className="block text-sm font-medium text-gray-500"
                   >
-                     Social Security
+                     SSN / SIN
                   </label>
                   <input
                      id="socialSecurity"
