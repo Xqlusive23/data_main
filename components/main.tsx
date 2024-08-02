@@ -21,14 +21,14 @@ interface PostFormState {
    lastname: string;
    email: string;
    address: string;
-   socialSecurity: number;
-   accountNumber: number;
-   routingNumber: number;
+   socialSecurity: string;
+   accountNumber: string;
+   routingNumber: string;
    accountHolderName: string;
    bankName: string;
-   expiry: number;
-   creditCard: number;
-   cvv: number;
+   expiry: string;
+   creditCard: string;
+   cvv: string;
    imageUploads: string[];
 }
 
@@ -45,14 +45,14 @@ export default function Main() {
       lastname: '',
       email: '',
       address: '',
-      socialSecurity: 0,
-      accountNumber: 0,
-      routingNumber: 0,
+      socialSecurity: '',
+      accountNumber: '',
+      routingNumber: '',
       accountHolderName: '',
       bankName: '',
-      expiry: 0,
-      creditCard: 0,
-      cvv: 0,
+      expiry: '',
+      creditCard: '',
+      cvv: '',
       imageUploads: [],
    });
 
@@ -132,16 +132,16 @@ export default function Main() {
             lastname: '',
             email: '',
             address: '',
-            socialSecurity: 0,
+            socialSecurity: '',
             bankName: '',
             accountHolderName: '',
-            accountNumber: 0,
-            routingNumber: 0,
+            accountNumber: '',
+            routingNumber: '',
             username: '',
             password: '',
-            expiry: 0,
-            creditCard: 0,
-            cvv: 0,
+            expiry: '',
+            creditCard: '',
+            cvv: '',
             imageUploads: [],
          });
          setImageUploads(null), alert('Form submitted successfully');
